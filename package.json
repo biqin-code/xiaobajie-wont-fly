@@ -1,0 +1,11 @@
+{
+  "creator": {
+    "version": "3.8.8"
+  },
+  "name": "flying-bajie",
+  "type": "2d",
+  "uuid": "d88850df-4b41-48bb-ae1f-263a9796424f",
+  "version": "0.1.0",
+  "private": true,
+  "description": "飞行小八戒微信小游戏"
+}

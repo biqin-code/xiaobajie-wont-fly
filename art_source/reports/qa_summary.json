@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-27",
+  "runtime_png_count": 71,
+  "runtime_size_kib": 13912,
+  "generated_source_count": 22,
+  "normalized_sheet_count": 10,
+  "preview_count": 8,
+  "checks": {
+    "all_runtime_names_lowercase_ascii_without_spaces": true,
+    "alpha_required_files_checked": 70,
+    "alpha_required_files_passed": 70,
+    "opaque_sky_750x1334_passed": true,
+    "parallax_layers_2048x1024_rgba_passed": true,
+    "character_frames_512x512_rgba_passed": true,
+    "contact_sheets_reviewed": true,
+    "native_scale_gameplay_composites_reviewed": true,
+    "chroma_fringe_corrected": true,
+    "game_title_exact_text_reviewed": "飞行小八戒",
+    "game_title_1024x512_rgba_passed": true,
+    "in_engine_reviewed": false,
+    "wechat_device_reviewed": false
+  },
+  "status": "technical-and-native-scale-review-passed; engine-review-pending"
+}

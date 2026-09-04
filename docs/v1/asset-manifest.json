@@ -1,0 +1,614 @@
+{
+  "schema_version": 1,
+  "scope": "v1-visual-assets",
+  "art_direction_brief": "docs/v1/07-ART-DIRECTION-BRIEF.md",
+  "status_values": [
+    "planned",
+    "greybox",
+    "in-progress",
+    "review",
+    "approved"
+  ],
+  "common_source": {
+    "kind": "ai-generated-and-deterministically-normalized",
+    "creator": "OpenAI image generation + Codex asset pipeline",
+    "created_at": "2026-08-26",
+    "license": "generated-for-project; human IP review required before commercial release",
+    "attribution": "",
+    "source_record": "art_source/provenance.json"
+  },
+  "background_v2": {
+    "status": "review",
+    "path": "assets/art/backgrounds/v2/",
+    "runtime_path": "assets/resources/backgrounds/v2/",
+    "layers": ["bg_sky_v2", "bg_far_cloudsea_v2", "bg_mid_tiangong_v2", "bg_near_clouds_v2"],
+    "dimensions": "750x1334",
+    "alpha": [false, true, true, true],
+    "source_record": "art_source/provenance.json",
+    "preview": "art_source/previews/background_v2_composite.png",
+    "technical_checks_passed": true,
+    "in_engine_reviewed": false
+  },
+  "background_v3": {
+    "status": "review",
+    "path": "assets/art/backgrounds/v3/bg_tiangong_unified_v3.png",
+    "runtime_path": "assets/resources/backgrounds/v3/bg_tiangong_unified_v3.png",
+    "dimensions": "750x1334",
+    "alpha": false,
+    "render_mode": "single-opaque-overscan-drift",
+    "viewport_clip": "750x1334-rect-mask",
+    "technical_checks_passed": true,
+    "in_engine_reviewed": false
+  },
+  "assets": [
+    {
+      "id": "bajie_idle",
+      "role": "player idle animation",
+      "path": "assets/art/characters/bajie/idle/",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "body-center",
+        "frames": 6,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "identity",
+        "proportions",
+        "costume",
+        "palette",
+        "facing-right",
+        "light-from-upper-left"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bajie_fly_up",
+      "role": "player hold-to-rise animation",
+      "path": "assets/art/characters/bajie/fly_up/",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "body-center",
+        "frames": 6,
+        "filtering": "linear",
+        "collision_role": "shared-player-core"
+      },
+      "visual_locks": [
+        "identity",
+        "proportions",
+        "costume",
+        "palette",
+        "facing-right",
+        "ear-span"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bajie_fall",
+      "role": "player released/falling animation",
+      "path": "assets/art/characters/bajie/fall/",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "body-center",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "shared-player-core"
+      },
+      "visual_locks": [
+        "identity",
+        "proportions",
+        "costume",
+        "palette",
+        "facing-right"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bajie_hit",
+      "role": "player hit reaction",
+      "path": "assets/art/characters/bajie/hit/",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "body-center",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "identity",
+        "costume",
+        "palette",
+        "facing-right"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bajie_dead",
+      "role": "player death/fall animation",
+      "path": "assets/art/characters/bajie/dead/",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "body-center",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "identity",
+        "costume",
+        "palette"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bg_sky",
+      "role": "opaque sky base",
+      "path": "assets/art/backgrounds/bg_sky.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "750x1334",
+        "alpha": false,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "sky-palette",
+        "low-contrast-gameplay-lane"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bg_far_cloudsea",
+      "role": "far parallax cloud sea",
+      "path": "assets/art/backgrounds/bg_far_cloudsea.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "2048x1024",
+        "alpha": true,
+        "anchor": "center-left",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none",
+        "seamless_x": false,
+        "scroll_mode": "overlapping-paired-sprites"
+      },
+      "visual_locks": [
+        "low-contrast",
+        "air-perspective",
+        "seamless-loop"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bg_mid_tiangong",
+      "role": "mid parallax palaces and floating mountains",
+      "path": "assets/art/backgrounds/bg_mid_tiangong.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "2048x1024",
+        "alpha": true,
+        "anchor": "center-left",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none",
+        "seamless_x": false,
+        "scroll_mode": "overlapping-paired-sprites"
+      },
+      "visual_locks": [
+        "eastern-mythology",
+        "air-perspective",
+        "no-false-collision-cues"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "bg_near_clouds",
+      "role": "near parallax cloud wisps",
+      "path": "assets/art/backgrounds/bg_near_clouds.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "2048x1024",
+        "alpha": true,
+        "anchor": "center-left",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none",
+        "seamless_x": false,
+        "scroll_mode": "overlapping-paired-sprites"
+      },
+      "visual_locks": [
+        "low-opacity",
+        "edge-only-coverage",
+        "seamless-loop"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_mountain_family",
+      "role": "bottom static obstacle, small/medium/large",
+      "path": "assets/art/obstacles/mountain/",
+      "status": "review",
+      "technical": {
+        "dimensions": "three-native-size-variants",
+        "alpha": true,
+        "anchor": "top-center-channel-edge",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "simplified-polygon"
+      },
+      "visual_locks": [
+        "warm-rock",
+        "green-accents",
+        "clear-channel-edge",
+        "upper-left-light"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_pillar_family",
+      "role": "bottom static obstacle, small/medium/large",
+      "path": "assets/art/obstacles/pillar/",
+      "status": "review",
+      "technical": {
+        "dimensions": "three-height-variants",
+        "alpha": true,
+        "anchor": "top-center-channel-edge",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "inset-rectangle-or-polygon"
+      },
+      "visual_locks": [
+        "warm-jade",
+        "cloud-pattern",
+        "no-stretched-texture",
+        "upper-left-light"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_fireball",
+      "role": "bottom dynamic obstacle",
+      "path": "assets/art/obstacles/fireball/",
+      "status": "review",
+      "technical": {
+        "source_frame": "256x256",
+        "alpha": true,
+        "anchor": "core-center",
+        "frames": 6,
+        "filtering": "linear",
+        "collision_role": "inset-circle"
+      },
+      "visual_locks": [
+        "gold-core",
+        "orange-red-flame",
+        "soft-trail",
+        "clear-core"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_storm_cloud_family",
+      "role": "top static/breathing obstacle, small/medium/large",
+      "path": "assets/art/obstacles/storm_cloud/",
+      "status": "review",
+      "technical": {
+        "dimensions": "three-native-size-variants",
+        "alpha": true,
+        "anchor": "bottom-center-channel-edge",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "inset-rounded-rect"
+      },
+      "visual_locks": [
+        "blue-purple-grey",
+        "not-background-white",
+        "clear-lower-edge"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_lightning_warning",
+      "role": "lightning warning VFX, non-damaging",
+      "path": "assets/art/obstacles/lightning/",
+      "status": "review",
+      "technical": {
+        "source_frame": "256x512",
+        "alpha": true,
+        "anchor": "top-center",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "lower-brightness-than-active",
+        "same-strike-lane"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_lightning_active",
+      "role": "active damaging lightning",
+      "path": "assets/art/obstacles/lightning/",
+      "status": "review",
+      "technical": {
+        "source_frame": "256x512",
+        "alpha": true,
+        "anchor": "top-center",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "main-bolt-inset-box"
+      },
+      "visual_locks": [
+        "gold-white-or-light-purple",
+        "high-readability",
+        "main-bolt-dominant"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "obstacle_fire_wheel",
+      "role": "top dynamic rotating obstacle",
+      "path": "assets/art/obstacles/fire_wheel/fire_wheel.png",
+      "status": "review",
+      "technical": {
+        "source_frame": "512x512",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "inset-circle"
+      },
+      "visual_locks": [
+        "gold-red",
+        "eastern-pattern",
+        "clear-round-silhouette",
+        "non-strobing"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "fx_wind_lines",
+      "role": "player flight wind accents",
+      "path": "assets/art/effects/wind_lines.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "512x256",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "soft-white",
+        "sparse",
+        "curved"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "fx_hit_cloud",
+      "role": "player hit puff",
+      "path": "assets/art/effects/hit_cloud/",
+      "status": "review",
+      "technical": {
+        "dimensions": "256x256",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 6,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "warm-white",
+        "comic-not-violent",
+        "short-lived"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "fx_score_sparkle",
+      "role": "score feedback",
+      "path": "assets/art/effects/score_sparkle.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "256x256",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "warm-gold",
+        "subtle",
+        "non-obscuring"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "ui_title",
+      "role": "game title lockup",
+      "path": "assets/art/ui/title/game_title.png",
+      "status": "review",
+      "technical": {
+        "dimensions": "1024x512",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 1,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "exact-title-text",
+        "original-hand-lettering",
+        "warm-playful"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "ui_panels",
+      "role": "home pause and result panel frames",
+      "path": "assets/art/ui/panels/",
+      "status": "review",
+      "technical": {
+        "dimensions": "separate-power-of-two-pngs",
+        "alpha": true,
+        "anchor": "per-slice",
+        "frames": 4,
+        "filtering": "linear",
+        "collision_role": "none"
+      },
+      "visual_locks": [
+        "lightweight-cloud-jade-wood",
+        "no-heavy-pagegame-gold",
+        "nine-slice-safe"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    },
+    {
+      "id": "ui_icons",
+      "role": "pause audio home retry and hold hint icons",
+      "path": "assets/art/ui/icons/",
+      "status": "review",
+      "technical": {
+        "dimensions": "256x256",
+        "alpha": true,
+        "anchor": "per-slice-center",
+        "frames": 6,
+        "filtering": "linear",
+        "collision_role": "ui-hit-area-defined-in-engine"
+      },
+      "visual_locks": [
+        "consistent-line-weight",
+        "no-baked-text",
+        "clear-at-small-size"
+      ],
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": false,
+        "technical_checks_passed": true,
+        "approved_by": ""
+      }
+    }
+  ],
+  "generated_asset_guide": "docs/v1/08-GENERATED-ASSETS.md",
+  "qa_report": "art_source/reports/qa_summary.json"
+}

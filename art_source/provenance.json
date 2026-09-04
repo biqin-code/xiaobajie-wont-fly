@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-26",
+  "tool": "OpenAI built-in image generation",
+  "title_revision": {
+    "updated_at": "2026-08-27",
+    "current_text": "飞行小八戒",
+    "method": "OpenAI built-in image edit followed by deterministic chroma removal and 1024x512 RGBA normalization"
+  },
+  "background_v2_revision": {
+    "updated_at": "2026-09-02",
+    "tool": "OpenAI built-in image generation",
+    "reference_role": "composition, brightness and floating-celestial-world mood only",
+    "method": "four independent generated layers, 750x1334 normalization, deterministic checker-background extraction for mid/near layers, alpha validation",
+    "runtime_root": "assets/resources/backgrounds/v2/",
+    "preview": "art_source/previews/background_v2_composite.png"
+  },
+  "background_v3_revision": {
+    "updated_at": "2026-09-02",
+    "tool": "OpenAI built-in image generation",
+    "method": "single original opaque unified scene, 750x1334 normalization",
+    "reason": "replace V2 layered transparency artifacts and visible rectangular boundaries",
+    "runtime_path": "assets/resources/backgrounds/v3/bg_tiangong_unified_v3.png"
+  },
+  "postprocessing": {
+    "operator": "Codex deterministic local asset pipeline",
+    "completed_at": "2026-08-27",
+    "operations": [
+      "chroma/checker background removal",
+      "connected-component subject extraction",
+      "frame normalization and stable canvas alignment",
+      "PNG alpha validation",
+      "native-size gameplay composition review"
+    ],
+    "runtime_root": "assets/art/",
+    "qa_report": "reports/qa_summary.json"
+  },
+  "license_note": "Generated specifically for this project; complete human rights review before commercial release.",
+  "reference_note": "Existing project illustrations were used only for identity, palette and mood guidance; generated runtime assets are new compositions.",
+  "files": {
+    "style_target": "generated/style_target_source.png",
+    "bajie_idle": "generated/bajie_idle_source.png",
+    "bajie_fly_up": "generated/bajie_fly_up_source.png",
+    "bajie_fall": "generated/bajie_fall_source.png",
+    "bajie_hit": "generated/bajie_hit_source.png",
+    "bajie_dead": "generated/bajie_dead_source.png",
+    "bg_sky": "generated/bg_sky_source.png",
+    "bg_far_cloudsea": "generated/bg_far_cloudsea_source.png",
+    "bg_mid_tiangong": "generated/bg_mid_tiangong_source.png",
+    "bg_near_clouds": "generated/bg_near_clouds_source.png",
+    "bg_sky_v2": "generated/backgrounds_v2/bg_sky_v2_source.png",
+    "bg_far_cloudsea_v2": "generated/backgrounds_v2/bg_far_cloudsea_v2_source.png",
+    "bg_mid_tiangong_v2": "generated/backgrounds_v2/bg_mid_tiangong_v2_alpha_fixed.png",
+    "bg_near_clouds_v2": "generated/backgrounds_v2/bg_near_clouds_v2_alpha_fixed.png",
+    "bg_tiangong_unified_v3": "generated/backgrounds_v3/bg_tiangong_unified_v3_source.png",
+    "mountain_family": "generated/mountain_family_source.png",
+    "pillar_family": "generated/pillar_family_source.png",
+    "storm_cloud_family": "generated/storm_cloud_family_source.png",
+    "fireball": "generated/fireball_source.png",
+    "lightning_warning": "generated/lightning_warning_source.png",
+    "lightning_active": "generated/lightning_active_source.png",
+    "fire_wheel": "generated/fire_wheel_source.png",
+    "hit_cloud": "generated/hit_cloud_source.png",
+    "vfx_mini_kit": "generated/vfx_mini_kit_source.png",
+    "ui_title": "generated/ui_title_source.png",
+    "ui_panels": "generated/ui_panels_source.png",
+    "ui_icons": "generated/ui_icons_source.png"
+  }
+}

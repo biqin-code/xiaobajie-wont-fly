@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "4a77b962-58d4-4e4e-8875-638bc6a8d2ee",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/ui/PrototypePanel.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

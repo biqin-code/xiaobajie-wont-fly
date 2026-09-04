@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Cocos Creator generated data
+/library/
+/temp/
+/local/
+/build/
+/profiles/
+/native/
+
+# JavaScript tooling
+/node_modules/
+
+# Editors
+/.vscode/
+/.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
